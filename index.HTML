@@ -308,7 +308,7 @@
         
         // Auto Sync Loop
         setInterval(function() {
-            if(currentUser && API_URL !== "PASTE_URL_GOOGLE_SCRIPT_DISINI") {
+            if(currentUser && API_URL !== "https://script.google.com/macros/s/AKfycbyD-adOmceTKwYmroY-2iO6oviOZSysPUU6r96ueKl3dt-wu8jouDrM-LD2Ypp9lrxN/exec") {
                 fetch(API_URL).then(r=>r.json()).then(data => {
                     const newSidang = data.filter(i => i.type === 'sidang');
                     if(JSON.stringify(newSidang) !== JSON.stringify(dbSidang)) {
@@ -567,3 +567,4 @@
     </script>
 </body>
 </html>
+
